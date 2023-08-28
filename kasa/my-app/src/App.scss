@@ -1,0 +1,15 @@
+.App {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    overflow: hidden;
+ }
+
+
+@media screen and (max-width: 768px) {
+  .App    {
+      padding: 0.25rem 1rem;
+  }
+}

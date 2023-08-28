@@ -1,0 +1,232 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.accommodation-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+
+    .modalities-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .accordion-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        ul {
+            list-style: none;
+            margin-left: -2rem;
+            margin-top: 0;
+        }
+
+        p {
+            margin: 0 0.5rem;
+        }
+
+        .accordion-wrapper {
+            width: 45%;
+        }
+
+    }
+
+    .info-left {
+        width: 70%;
+
+        .accommodation-title {
+            color: #FF6060;
+            font-size: 36px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .accommodation-location {
+            margin-top: 5px;
+            color: #FF6060;
+        }
+
+        .accommodation-tags {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .tags-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            background-color: #FF6060;
+            height: 1rem;
+            min-width: 5rem;
+            display: flex;
+            justify-content: center;
+            color: white;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+        .accommodation-description {
+            margin-top: 10px;
+        }
+    }
+
+    .info-right {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+
+        .host {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .host-name-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center; 
+                font-size: 18px;
+                color: #FF6060;
+                font-weight: 500;
+                margin-right: 10px;
+                align-items: flex-end;
+            }
+
+            .host-first-name {
+                margin: 0;
+            }
+
+            .host-last-name {
+                margin: 5px 0 0 0;
+            }
+
+            .host-picture {
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+            }
+        }
+
+        .rating {
+            margin-top: 30px;
+            .fas.fa-star{
+                font-size: 1.3rem;
+                margin-left: 13px;
+            }
+            .fas.fa-star.grey {
+                color: #e3e3e3;
+            }
+
+            .fas.fa-star.red {
+                color: #FF6060;
+            }
+
+
+        }
+
+        .accommodation-equipment {
+            margin-top: 10px;
+
+            summary {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .accommodation-info{
+        margin-bottom: 20px;
+    }
+
+    .accommodation-info .modalities-container {
+        flex-direction: column;
+    }
+
+    .accommodation-info .info-left {
+        width: 100%;
+    }
+
+    .accommodation-info .info-right {
+        width: 100%;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .host {
+            flex-direction: column; 
+            align-items: center; 
+
+            .host-picture {
+                margin-top: 10px; 
+            }
+        }
+
+        .rating {
+            align-self: flex-start; 
+        }
+    }
+
+    .accommodation-info .accordion-container{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .accommodation-info .accordion-container .accordion-wrapper {
+        width: 100%;
+    }
+    .accommodation-info .info-left .accommodation-title {
+        font-size: 18px;
+    }
+    .accommodation-info .info-left .accommodation-location {
+        font-size: 14px;
+        margin-top: 7.5px;
+        font-weight:500;
+    }
+    .accommodation-info .info-right{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+    }
+    .accommodation-info .info-right .rating .fas.fa-star{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .accommodation-info .info-right .host{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .accommodation-info .info-right .host .host-name-container{
+        font-size: 16px;
+    }
+    .accommodation-info .info-right .host .host-picture{
+        margin-top: 0;
+    }
+    .accommodation-info .info-right .rating{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .accommodation-info .info-right .rating .fas.fa-star{
+        font-size: 1rem;
+    }
+    .accommodation-info .info-left .tags-container{
+        margin-bottom: 0;
+    }
+}

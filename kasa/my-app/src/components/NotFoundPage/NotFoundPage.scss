@@ -1,0 +1,51 @@
+.not-found-page{
+    color: #FF6060;
+    //center the elements
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 15rem;
+        font-weight: 800;
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin: 0;
+        // padding: 0;
+        //bold
+        
+    }
+    .homepage-link{
+        margin: 9rem 0 9rem 0;
+        font-size: 1.2rem;
+        color: #FF6060;
+    }
+
+}
+
+//Breakpoint for tablet and mobile
+@media (max-width: 768px) {
+    .not-found-page{
+        height: 100vh;
+        text-align: center;
+        
+
+
+        h1{
+            font-size: 8rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        // .not-found-explanation{
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     text-align: center;
+        // }
+    }
+}
