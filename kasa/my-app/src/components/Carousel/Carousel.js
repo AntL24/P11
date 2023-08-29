@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Carousel.scss';
 
+//Carousel component to display the pictures of the accommodation
 function Carousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -12,6 +13,7 @@ function Carousel({ pictures }) {
     setCurrentIndex(prevIndex => (prevIndex - 1 + pictures.length) % pictures.length);
   };
 
+  //Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'ArrowRight') {
@@ -23,11 +25,13 @@ function Carousel({ pictures }) {
 
     window.addEventListener('keydown', handleKeyDown);
 
+    //Clean up function once the component is unmounted or re-rendered
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [nextSlide, prevSlide]);
 
+  //Carousel web element
   return (
     <div className="carousel">
       <div

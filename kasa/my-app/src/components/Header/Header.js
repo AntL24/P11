@@ -7,7 +7,9 @@ function Header() {
     <header>
       <img src="/images/logo_Kasa.svg" alt="Kasa" className="header-logo" />
       <nav>
-      <NavLink to="/" exact="true"  activeclassname="active-link" className="header-link">Accueil</NavLink>
+        {/* exact="true" to avoid the active class to be applied to both links */}
+        {/* If /about had a subpage, we would have to use the "exact" prop on the parent route */}
+        <NavLink to="/" exact="true" activeclassname="active-link" className="header-link">Accueil</NavLink>
         <NavLink to="/about" activeclassname="active-link" className="header-link">À propos</NavLink>
       </nav>
     </header>

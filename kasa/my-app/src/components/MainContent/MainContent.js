@@ -2,6 +2,7 @@ import React from 'react';
 import AccommodationPreview from './../AccommodationPreview/AccommodationPreview.js';
 import './MainContent.scss';
 
+//Main content of the home page
 const MainContent = ({ accommodations }) => (
     <div className="main-content">
         <div className = "body-banner">

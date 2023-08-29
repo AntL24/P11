@@ -2,7 +2,8 @@ import React from 'react';
 import './AccommodationInfo.scss';
 import AccordionPanel from '../AccordionPannel/AccordionPannel';
 
-
+//All the information about the accommodation, the host and the rating
+//Will be displayed in the accommodation details page
 function AccommodationInfo({ accommodation }) {
     return (
         <div className="accommodation-info">

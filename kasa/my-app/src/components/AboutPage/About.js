@@ -2,6 +2,7 @@ import React from "react";
 import AccordionPanel from "./../AccordionPannel/AccordionPannel.js";
 import "./About.scss";
 
+//Simple page with an image and multiple accordion panels containing rules and values of the company
 const AboutPage = () => (
   <div className="about-page">
     <img src="/images/img_about.png" className="about-banner" alt="Paysage de montagne" />
